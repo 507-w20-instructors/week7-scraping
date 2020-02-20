@@ -32,14 +32,17 @@ print("soup.find_all(id='hello-list'):", all_hello_elements)
 print("------")
 
 
+
 print("TYPE OF LIST ELEMENTS RETURNED BY find_all()")
 print(type(all_list_items[0]))
 print('------')
+
 
 print("EXTRACTING STRINGS FROM LIST ITEMS AND PRINTING THEM UPPERCASE")
 for li in all_list_items:
     print(li.string.upper(), type(li.string))
 print('------')
+exit()
 
 print("EXAMINING THE CHILDREN OF THE 'HELLO' LIST")
 for child in all_hello_elements[0].contents:
